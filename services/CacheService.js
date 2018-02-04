@@ -2,6 +2,8 @@ const md5 = require('md5');
 const redis = require("redis");
 const NoCacheClient = require('./NoCacheClient');
 
+require('dotenv').config();
+
 const cacheClient = process.env.REDIS_ENABLED ? redis.createClient({
   host: process.env.REDIS_HOST,
   port: process.env.REDIS_PORT,
