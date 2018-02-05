@@ -16,7 +16,7 @@ http://style.my-domain.com/project-name?primary-color=red&secondary-color=blue
 2. Include the SCSS files of your project, recommend bringing this in via `npm`
 
 3. Create the following `on-sass.json` file.  I personally add this config file to root directory of the projects I bring in via npm.
-```
+```js
 {
   "title": "My Project",
   "files":[
