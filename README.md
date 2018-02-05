@@ -20,7 +20,7 @@ http://style.my-domain.com/project-name?primary-color=red&secondary-color=blue
 {
   "title": "My Project",
   "files":[
-    // scss files to include
+    // scss files to include, this should be relative to the location of this config file
   ],
   "custom_defaults": {
     // variables which are available to change and their default value, i.e:
@@ -52,7 +52,7 @@ And you're done, you can reach the CSS from the url:
 
 ### Redis
 On-Sass support Redis caching. This will cache resulting CSS under a key made from a hashed version of the request.
-This means the same requests will be return the same css without recompiling.
+This means the same requests will return the same css without recompiling.
 
 To use redis include a `.env` with your Redis details.  (This following is a copy of the `.env.example`)
 ```.env
